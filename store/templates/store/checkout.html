@@ -99,6 +99,7 @@
 		document.getElementById('make-payment').addEventListener('click',function(e){
 			submitFormData()
 		})
+
 		function submitFormData(){
 			console.log("Payment button clicked")
 
@@ -126,7 +127,6 @@
 			if(user == 'AnonymousUser'){
 				userFormData.name = form.name.value
 				userFormData.email = form.email.value
-				
 			}
 
 			var url = '/process_order/'
